@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Validation Clarity Radar</title>
+    <link>https://enricogebauer.github.io/validation-clarity-radar/feed.xml</link>
+    <atom:link href="https://enricogebauer.github.io/validation-clarity-radar/feed.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <description>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype.</description>
+    <itunes:author>Enrico Gebauer</itunes:author>
+    <itunes:summary>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>egebauer@microsoft.com</itunes:email></itunes:owner>
+    <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
+    <itunes:category text="Technology" />
+    <lastBuildDate>Thu, 13 Aug 2026 17:43:46 GMT</lastBuildDate>
+    <item>
+      <title>Question Your Oracles</title>
+      <itunes:author>Enrico Gebauer</itunes:author>
+      <description>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype.</description>
+      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=14563830" length="14563830" type="audio/mpeg" />
+      <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
+      <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-13.mp3-14563830</guid>
+      <pubDate>Thu, 13 Aug 2026 16:05:01 GMT</pubDate>
+      <itunes:duration>00:15:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
