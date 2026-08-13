@@ -13,11 +13,21 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology" />
-    <lastBuildDate>Thu, 13 Aug 2026 20:05:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 21:23:51 GMT</lastBuildDate>
     <item>
       <title>Question Your Oracles</title>
       <itunes:author>Enrico Gebauer</itunes:author>
-      <description>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype.</description>
+      <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-13.html</link>
+      <description>This week&apos;s throughline: as agents make code and tests cheap, all the value moves to verification you can actually trust - from benchmarks agents have saturated, to making machine-written tests meaningful, to mutation testing as the metric with teeth, and the rise (and risks) of the AI judge.
+
+In this episode:
+- OpenAI: Introducing SWE-bench Verified (the human-validated 500-issue benchmark agents are now saturating): https://openai.com/index/introducing-swe-bench-verified/
+- SWE-bench - leaderboard and the harder &apos;Pro&apos;/live successors: https://www.swebench.com/
+- Meta: Automated Unit Test Improvement using LLMs (TestGen-LLM - generate cheaply, filter ruthlessly): https://arxiv.org/abs/2402.09171
+- Stryker Mutator - mutation testing for JavaScript and .NET: https://stryker-mutator.io/
+- PIT (pitest) - mutation testing for the JVM/Java: https://pitest.org/
+- Judging LLM-as-a-Judge with MT-Bench (documents position &amp; verbosity bias in AI judges): https://arxiv.org/abs/2306.05685</description>
+      <content:encoded><![CDATA[<p>This week's throughline: as agents make code and tests cheap, all the value moves to verification you can actually trust - from benchmarks agents have saturated, to making machine-written tests meaningful, to mutation testing as the metric with teeth, and the rise (and risks) of the AI judge.</p><p><strong>In this episode:</strong></p><ul><li><a href="https://openai.com/index/introducing-swe-bench-verified/">OpenAI: Introducing SWE-bench Verified (the human-validated 500-issue benchmark agents are now saturating)</a> &mdash; 2024-08-13</li><li><a href="https://www.swebench.com/">SWE-bench - leaderboard and the harder 'Pro'/live successors</a></li><li><a href="https://arxiv.org/abs/2402.09171">Meta: Automated Unit Test Improvement using LLMs (TestGen-LLM - generate cheaply, filter ruthlessly)</a> &mdash; 2024-02</li><li><a href="https://stryker-mutator.io/">Stryker Mutator - mutation testing for JavaScript and .NET</a></li><li><a href="https://pitest.org/">PIT (pitest) - mutation testing for the JVM/Java</a></li><li><a href="https://arxiv.org/abs/2306.05685">Judging LLM-as-a-Judge with MT-Bench (documents position &amp; verbosity bias in AI judges)</a> &mdash; 2023-06</li></ul>]]></content:encoded>
       <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969" length="15041969" type="audio/mpeg" />
       <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
       <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-13.mp3-15041969</guid>
