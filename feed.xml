@@ -13,16 +13,16 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology" />
-    <lastBuildDate>Thu, 13 Aug 2026 18:46:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 20:05:45 GMT</lastBuildDate>
     <item>
       <title>Question Your Oracles</title>
       <itunes:author>Enrico Gebauer</itunes:author>
       <description>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype.</description>
-      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=14563830" length="14563830" type="audio/mpeg" />
+      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969" length="15041969" type="audio/mpeg" />
       <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
-      <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-13.mp3-14563830</guid>
-      <pubDate>Thu, 13 Aug 2026 16:05:01 GMT</pubDate>
-      <itunes:duration>00:15:10</itunes:duration>
+      <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-13.mp3-15041969</guid>
+      <pubDate>Thu, 13 Aug 2026 20:05:32 GMT</pubDate>
+      <itunes:duration>00:15:40</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
