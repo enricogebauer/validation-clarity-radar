@@ -13,7 +13,27 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category>
-    <lastBuildDate>Fri, 14 Aug 2026 14:44:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 17:44:53 GMT</lastBuildDate>
+    <item>
+      <title>Proof Before Velocity</title>
+      <itunes:author>Enrico Gebauer</itunes:author>
+      <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-14.html</link>
+      <description>Three fresh signals show validation becoming an evidence architecture that follows agent-generated changes from product intent through production.
+
+In this episode:
+- How to bring your software delivery workflow into GitHub with agent apps: https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/
+- Five AI Validation Patterns Every Enterprise Engineering Team Should Implement: https://techstrong.ai/features/five-ai-validation-patterns-every-enterprise-engineering-team-should-implement/
+- Why Go is an Ideal Language for AI-Assisted Software Engineering: https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/
+
+AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
+      <content:encoded><![CDATA[<p>Three fresh signals show validation becoming an evidence architecture that follows agent-generated changes from product intent through production.</p><p><strong>In this episode:</strong></p><ul><li><a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/">How to bring your software delivery workflow into GitHub with agent apps</a> &mdash; 2026-08-14</li><li><a href="https://techstrong.ai/features/five-ai-validation-patterns-every-enterprise-engineering-team-should-implement/">Five AI Validation Patterns Every Enterprise Engineering Team Should Implement</a> &mdash; 2026-08-13</li><li><a href="https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/">Why Go is an Ideal Language for AI-Assisted Software Engineering</a> &mdash; 2026-08-11</li></ul><p><em>AI-generated audio briefing curated by Enrico Gebauer from public sources.</em></p>]]></content:encoded>
+      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465" length="17635465" type="audio/mpeg" />
+      <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
+      <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-14.mp3-17635465</guid>
+      <pubDate>Fri, 14 Aug 2026 17:44:52 GMT</pubDate>
+      <itunes:duration>00:18:22</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Question Your Oracles</title>
       <itunes:author>Enrico Gebauer</itunes:author>
