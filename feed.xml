@@ -13,41 +13,113 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category>
-    <lastBuildDate>Fri, 14 Aug 2026 17:44:53 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 18:55:52 GMT</lastBuildDate>
     <item>
       <title>Proof Before Velocity</title>
       <itunes:author>Enrico Gebauer</itunes:author>
       <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-14.html</link>
       <description>Three fresh signals show validation becoming an evidence architecture that follows agent-generated changes from product intent through production.
 
-In this episode:
-- How to bring your software delivery workflow into GitHub with agent apps: https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/
-- Five AI Validation Patterns Every Enterprise Engineering Team Should Implement: https://techstrong.ai/features/five-ai-validation-patterns-every-enterprise-engineering-team-should-implement/
-- Why Go is an Ideal Language for AI-Assisted Software Engineering: https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/
+Bonus episode - 18:02
+
+Key takeaways:
+- Agent workflows become defensible when every specialist returns a bounded claim with provenance, freshness, limits, and an explicit decision policy.
+- Probabilistic AI needs ground truth, behavior envelopes, adversarial coverage, calibrated routing, and a production feedback loop alongside conventional software checks.
+- Deterministic toolchains can shrink the uncertainty surface around generated code, but they cannot prove business intent or make the remaining risks disappear.
+
+Chapters:
+- 00:00 Why justified confidence is now the scarce resource
+- 01:18 Agent apps turn pull requests into evidence workspaces
+- 05:55 Five patterns for validating probabilistic AI
+- 10:16 Go and the value of verification ergonomics
+- 14:05 The evidence architecture behind a safe transition
+- 16:12 Country sign-off: Show Your Work
+
+Stories and sources:
+
+Agent apps turn pull requests into evidence workspaces
+GitHub shows specialist agents bringing product analytics, dependency risk, rollout controls, and operational context into the issue and pull-request workflow.
+Validation impact: A shared thread is useful only when agent outputs carry typed claims, provenance, coverage, freshness, and policy for resolving conflicting evidence.
+Sources:
+- [headline] How to bring your software delivery workflow into GitHub with agent apps (2026-08-14): https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/
+
+Five patterns for validating probabilistic AI
+A proposed enterprise framework combines ground-truth evaluation, consistency testing, adversarial scenarios, confidence-based routing, and continuous production validation.
+Validation impact: The durable system connects deterministic software properties with probabilistic behavior and converts surprising live failures into owned, reproducible pre-deployment checks.
+Sources:
+- [headline] Five AI Validation Patterns Every Enterprise Engineering Team Should Implement (2026-08-13): https://techstrong.ai/features/five-ai-validation-patterns-every-enterprise-engineering-team-should-implement/
+
+Go and the value of verification ergonomics
+Google argues that AI-assisted engineering shifts the bottleneck from writing code toward reviewing, verifying, and maintaining generated changes.
+Validation impact: Standard formatting, fast compilation, tests, fuzzing, dependency management, and vulnerability tooling accelerate bounded feedback, while reviewers still own intent, authorization, rollback, and other semantic risks.
+Sources:
+- [headline] Why Go is an Ideal Language for AI-Assisted Software Engineering (2026-08-11): https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/
+
+Country sign-off: Show Your Work - An original country recap about requiring fresh, bounded evidence before a change advances.
 
 AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
-      <content:encoded><![CDATA[<p>Three fresh signals show validation becoming an evidence architecture that follows agent-generated changes from product intent through production.</p><p><strong>In this episode:</strong></p><ul><li><a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/">How to bring your software delivery workflow into GitHub with agent apps</a> &mdash; 2026-08-14</li><li><a href="https://techstrong.ai/features/five-ai-validation-patterns-every-enterprise-engineering-team-should-implement/">Five AI Validation Patterns Every Enterprise Engineering Team Should Implement</a> &mdash; 2026-08-13</li><li><a href="https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/">Why Go is an Ideal Language for AI-Assisted Software Engineering</a> &mdash; 2026-08-11</li></ul><p><em>AI-generated audio briefing curated by Enrico Gebauer from public sources.</em></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p class="episode-meta"><span class="badge">Bonus episode</span><span>18:02</span></p><p class="intro">Three fresh signals show validation becoming an evidence architecture that follows agent-generated changes from product intent through production.</p><audio id="episode-audio" controls preload="metadata" src="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465">Your browser does not support audio playback. <a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465">Download the episode MP3</a>.</audio><p class="download"><a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465">Download MP3</a></p><section aria-labelledby="takeaways"><h2 id="takeaways">Key takeaways</h2><ul class="takeaways"><li>Agent workflows become defensible when every specialist returns a bounded claim with provenance, freshness, limits, and an explicit decision policy.</li><li>Probabilistic AI needs ground truth, behavior envelopes, adversarial coverage, calibrated routing, and a production feedback loop alongside conventional software checks.</li><li>Deterministic toolchains can shrink the uncertainty surface around generated code, but they cannot prove business intent or make the remaining risks disappear.</li></ul></section><section aria-labelledby="chapters"><h2 id="chapters">Chapters</h2><ol class="chapters"><li><a class="chapter-link" data-seconds="0" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465#t=0"><time>00:00</time> Why justified confidence is now the scarce resource</a></li><li><a class="chapter-link" data-seconds="78" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465#t=78"><time>01:18</time> Agent apps turn pull requests into evidence workspaces</a></li><li><a class="chapter-link" data-seconds="355" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465#t=355"><time>05:55</time> Five patterns for validating probabilistic AI</a></li><li><a class="chapter-link" data-seconds="616" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465#t=616"><time>10:16</time> Go and the value of verification ergonomics</a></li><li><a class="chapter-link" data-seconds="845" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465#t=845"><time>14:05</time> The evidence architecture behind a safe transition</a></li><li><a class="chapter-link" data-seconds="972" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465#t=972"><time>16:12</time> Country sign-off: Show Your Work</a></li></ol></section><section aria-labelledby="stories"><h2 id="stories">Stories and sources</h2><article><h3>Agent apps turn pull requests into evidence workspaces</h3><p>GitHub shows specialist agents bringing product analytics, dependency risk, rollout controls, and operational context into the issue and pull-request workflow.</p><p class="impact"><strong>Validation impact:</strong> A shared thread is useful only when agent outputs carry typed claims, provenance, coverage, freshness, and policy for resolving conflicting evidence.</p><ul class="sources"><li><a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/">How to bring your software delivery workflow into GitHub with agent apps</a><span class="source-meta">Headline · August 14, 2026</span></li></ul></article><article><h3>Five patterns for validating probabilistic AI</h3><p>A proposed enterprise framework combines ground-truth evaluation, consistency testing, adversarial scenarios, confidence-based routing, and continuous production validation.</p><p class="impact"><strong>Validation impact:</strong> The durable system connects deterministic software properties with probabilistic behavior and converts surprising live failures into owned, reproducible pre-deployment checks.</p><ul class="sources"><li><a href="https://techstrong.ai/features/five-ai-validation-patterns-every-enterprise-engineering-team-should-implement/">Five AI Validation Patterns Every Enterprise Engineering Team Should Implement</a><span class="source-meta">Headline · August 13, 2026</span></li></ul></article><article><h3>Go and the value of verification ergonomics</h3><p>Google argues that AI-assisted engineering shifts the bottleneck from writing code toward reviewing, verifying, and maintaining generated changes.</p><p class="impact"><strong>Validation impact:</strong> Standard formatting, fast compilation, tests, fuzzing, dependency management, and vulnerability tooling accelerate bounded feedback, while reviewers still own intent, authorization, rollback, and other semantic risks.</p><ul class="sources"><li><a href="https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/">Why Go is an Ideal Language for AI-Assisted Software Engineering</a><span class="source-meta">Headline · August 11, 2026</span></li></ul></article></section><section aria-labelledby="song"><h2 id="song">Country sign-off</h2><p><strong>Show Your Work</strong> — An original country recap about requiring fresh, bounded evidence before a change advances.</p></section><aside class="disclosure" aria-label="Production disclosure">AI-generated audio briefing curated by Enrico Gebauer from public sources.</aside>]]></content:encoded>
       <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-14.mp3?v=17635465" length="17635465" type="audio/mpeg" />
       <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
       <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-14.mp3-17635465</guid>
       <pubDate>Fri, 14 Aug 2026 17:44:52 GMT</pubDate>
-      <itunes:duration>00:18:22</itunes:duration>
+      <itunes:duration>00:18:02</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
       <title>Question Your Oracles</title>
       <itunes:author>Enrico Gebauer</itunes:author>
       <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-13.html</link>
-      <description>This week&apos;s throughline: as agents make code and tests cheap, all the value moves to verification you can actually trust - from benchmarks agents have saturated, to making machine-written tests meaningful, to mutation testing as the metric with teeth, and the rise (and risks) of the AI judge.
+      <description>As agents make code, tests, and judgments cheap, value moves to verification signals that can demonstrate what is actually safe to move forward.
 
-In this episode:
-- OpenAI: Introducing SWE-bench Verified (the human-validated 500-issue benchmark agents are now saturating): https://openai.com/index/introducing-swe-bench-verified/
-- SWE-bench - leaderboard and the harder &apos;Pro&apos;/live successors: https://www.swebench.com/
-- Meta: Automated Unit Test Improvement using LLMs (TestGen-LLM - generate cheaply, filter ruthlessly): https://arxiv.org/abs/2402.09171
-- Stryker Mutator - mutation testing for JavaScript and .NET: https://stryker-mutator.io/
-- PIT (pitest) - mutation testing for the JVM/Java: https://pitest.org/
-- Judging LLM-as-a-Judge with MT-Bench (documents position &amp; verbosity bias in AI judges): https://arxiv.org/abs/2306.05685</description>
-      <content:encoded><![CDATA[<p>This week's throughline: as agents make code and tests cheap, all the value moves to verification you can actually trust - from benchmarks agents have saturated, to making machine-written tests meaningful, to mutation testing as the metric with teeth, and the rise (and risks) of the AI judge.</p><p><strong>In this episode:</strong></p><ul><li><a href="https://openai.com/index/introducing-swe-bench-verified/">OpenAI: Introducing SWE-bench Verified (the human-validated 500-issue benchmark agents are now saturating)</a> &mdash; 2024-08-13</li><li><a href="https://www.swebench.com/">SWE-bench - leaderboard and the harder 'Pro'/live successors</a></li><li><a href="https://arxiv.org/abs/2402.09171">Meta: Automated Unit Test Improvement using LLMs (TestGen-LLM - generate cheaply, filter ruthlessly)</a> &mdash; 2024-02</li><li><a href="https://stryker-mutator.io/">Stryker Mutator - mutation testing for JavaScript and .NET</a></li><li><a href="https://pitest.org/">PIT (pitest) - mutation testing for the JVM/Java</a></li><li><a href="https://arxiv.org/abs/2306.05685">Judging LLM-as-a-Judge with MT-Bench (documents position &amp; verbosity bias in AI judges)</a> &mdash; 2023-06</li></ul>]]></content:encoded>
+Weekly episode - 15:40
+
+Key takeaways:
+- A coding benchmark is capability evidence, not a complete safety-to-merge signal; the quality and scope of its oracle still matter.
+- Generated tests earn trust through deterministic filtering and fault detection, not through volume or coverage alone.
+- An AI judge is another instrument under test: calibrate it against human anchors, version it, and track its false positives and false negatives.
+
+Chapters:
+- 00:00 Why cheap generation makes verification scarce
+- 00:42 Benchmark saturation and the oracle problem
+- 03:58 Generate tests cheaply, filter them ruthlessly
+- 06:28 Mutation testing gives generated tests teeth
+- 09:11 The AI judge must itself be validated
+- 12:32 Question every oracle
+- 13:50 Country sign-off: Question Your Oracles
+
+Stories and sources:
+
+Benchmark saturation exposes the oracle problem
+Rising coding-agent scores increase pressure to distinguish task completion from unattended merge safety. SWE-bench uses task-specific evaluation tests and regression tests, so its score is meaningful capability evidence but not a complete release verdict.
+Validation impact: A benchmark result must state what its oracle tested, what it did not test, and why that evidence is relevant to the release decision being made.
+Sources:
+- [background] OpenAI: Introducing SWE-bench Verified (2024-08-13): https://openai.com/index/introducing-swe-bench-verified/
+- [background] SWE-bench leaderboard and benchmark variants: https://www.swebench.com/
+
+Generated tests need an assurance filter
+Meta&apos;s TestGen-LLM work treats the model as a source of candidate tests, then filters candidates through compilation, repeatability, coverage improvement, and human review.
+Validation impact: Generation volume is not quality. Deterministic filters reduce noise, while assertion strength and fault detection remain necessary to show that a test can catch meaningful failures.
+Sources:
+- [background] Automated Unit Test Improvement using Large Language Models (2024-02): https://arxiv.org/abs/2402.09171
+
+Mutation testing gives generated tests teeth
+Mutation tools deliberately alter code and measure whether the test suite detects each injected fault, providing a stronger signal than execution coverage alone.
+Validation impact: Diff-scoped mutation testing can discriminate between high-volume generated tests and tests whose assertions would actually detect a behavioral regression.
+Sources:
+- [background] Stryker Mutator: https://stryker-mutator.io/
+- [background] PIT mutation testing: https://pitest.org/
+
+The AI judge must itself be validated
+LLM-based judges can evaluate outputs that lack exact assertions, but their stochastic behavior, model changes, position bias, and verbosity bias make them fallible instruments rather than final oracles.
+Validation impact: Use decomposed rubrics, human-labeled anchor sets, versioned judges, agreement metrics, and ongoing drift checks before allowing an AI judge to gate releases.
+Sources:
+- [background] Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (2023-06): https://arxiv.org/abs/2306.05685
+
+Country sign-off: Question Your Oracles - An original country recap about testing the signal, the benchmark, and the ruler itself.
+
+AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
+      <content:encoded><![CDATA[<p class="episode-meta"><span class="badge">Weekly episode</span><span>15:40</span></p><p class="intro">As agents make code, tests, and judgments cheap, value moves to verification signals that can demonstrate what is actually safe to move forward.</p><audio id="episode-audio" controls preload="metadata" src="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969">Your browser does not support audio playback. <a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969">Download the episode MP3</a>.</audio><p class="download"><a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969">Download MP3</a></p><section aria-labelledby="takeaways"><h2 id="takeaways">Key takeaways</h2><ul class="takeaways"><li>A coding benchmark is capability evidence, not a complete safety-to-merge signal; the quality and scope of its oracle still matter.</li><li>Generated tests earn trust through deterministic filtering and fault detection, not through volume or coverage alone.</li><li>An AI judge is another instrument under test: calibrate it against human anchors, version it, and track its false positives and false negatives.</li></ul></section><section aria-labelledby="chapters"><h2 id="chapters">Chapters</h2><ol class="chapters"><li><a class="chapter-link" data-seconds="0" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969#t=0"><time>00:00</time> Why cheap generation makes verification scarce</a></li><li><a class="chapter-link" data-seconds="42" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969#t=42"><time>00:42</time> Benchmark saturation and the oracle problem</a></li><li><a class="chapter-link" data-seconds="238" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969#t=238"><time>03:58</time> Generate tests cheaply, filter them ruthlessly</a></li><li><a class="chapter-link" data-seconds="388" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969#t=388"><time>06:28</time> Mutation testing gives generated tests teeth</a></li><li><a class="chapter-link" data-seconds="551" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969#t=551"><time>09:11</time> The AI judge must itself be validated</a></li><li><a class="chapter-link" data-seconds="752" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969#t=752"><time>12:32</time> Question every oracle</a></li><li><a class="chapter-link" data-seconds="830" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969#t=830"><time>13:50</time> Country sign-off: Question Your Oracles</a></li></ol></section><section aria-labelledby="stories"><h2 id="stories">Stories and sources</h2><article><h3>Benchmark saturation exposes the oracle problem</h3><p>Rising coding-agent scores increase pressure to distinguish task completion from unattended merge safety. SWE-bench uses task-specific evaluation tests and regression tests, so its score is meaningful capability evidence but not a complete release verdict.</p><p class="impact"><strong>Validation impact:</strong> A benchmark result must state what its oracle tested, what it did not test, and why that evidence is relevant to the release decision being made.</p><ul class="sources"><li><a href="https://openai.com/index/introducing-swe-bench-verified/">OpenAI: Introducing SWE-bench Verified</a><span class="source-meta">Background · August 13, 2024</span></li><li><a href="https://www.swebench.com/">SWE-bench leaderboard and benchmark variants</a><span class="source-meta">Background</span></li></ul></article><article><h3>Generated tests need an assurance filter</h3><p>Meta's TestGen-LLM work treats the model as a source of candidate tests, then filters candidates through compilation, repeatability, coverage improvement, and human review.</p><p class="impact"><strong>Validation impact:</strong> Generation volume is not quality. Deterministic filters reduce noise, while assertion strength and fault detection remain necessary to show that a test can catch meaningful failures.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2402.09171">Automated Unit Test Improvement using Large Language Models</a><span class="source-meta">Background · February 2024</span></li></ul></article><article><h3>Mutation testing gives generated tests teeth</h3><p>Mutation tools deliberately alter code and measure whether the test suite detects each injected fault, providing a stronger signal than execution coverage alone.</p><p class="impact"><strong>Validation impact:</strong> Diff-scoped mutation testing can discriminate between high-volume generated tests and tests whose assertions would actually detect a behavioral regression.</p><ul class="sources"><li><a href="https://stryker-mutator.io/">Stryker Mutator</a><span class="source-meta">Background</span></li><li><a href="https://pitest.org/">PIT mutation testing</a><span class="source-meta">Background</span></li></ul></article><article><h3>The AI judge must itself be validated</h3><p>LLM-based judges can evaluate outputs that lack exact assertions, but their stochastic behavior, model changes, position bias, and verbosity bias make them fallible instruments rather than final oracles.</p><p class="impact"><strong>Validation impact:</strong> Use decomposed rubrics, human-labeled anchor sets, versioned judges, agreement metrics, and ongoing drift checks before allowing an AI judge to gate releases.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2306.05685">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a><span class="source-meta">Background · June 2023</span></li></ul></article></section><section aria-labelledby="song"><h2 id="song">Country sign-off</h2><p><strong>Question Your Oracles</strong> — An original country recap about testing the signal, the benchmark, and the ruler itself.</p></section><aside class="disclosure" aria-label="Production disclosure">AI-generated audio briefing curated by Enrico Gebauer from public sources.</aside>]]></content:encoded>
       <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-13.mp3?v=15041969" length="15041969" type="audio/mpeg" />
       <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
       <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-13.mp3-15041969</guid>
