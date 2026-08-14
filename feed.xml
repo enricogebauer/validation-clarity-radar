@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
   <channel>
     <title>Validation Clarity Radar</title>
-    <link>https://enricogebauer.github.io/validation-clarity-radar/feed.xml</link>
+    <link>https://enricogebauer.github.io/validation-clarity-radar/notes/index.html</link>
     <atom:link href="https://enricogebauer.github.io/validation-clarity-radar/feed.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <description>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype.</description>
+    <description>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype. An AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
     <itunes:author>Enrico Gebauer</itunes:author>
-    <itunes:summary>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype.</itunes:summary>
+    <itunes:summary>Hosted by Nova and Kai - two co-hosts with strong opinions and a healthy appetite for debate - digging into where software validation and test automation are really heading in the agentic-AI era. Each week they pull the biggest public industry trends onto the radar, argue them out, and stress-test the hype. An AI-generated audio briefing curated by Enrico Gebauer from public sources.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
-    <itunes:category text="Technology" />
-    <lastBuildDate>Thu, 13 Aug 2026 21:29:22 GMT</lastBuildDate>
+    <itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category>
+    <lastBuildDate>Fri, 14 Aug 2026 14:44:00 GMT</lastBuildDate>
     <item>
       <title>Question Your Oracles</title>
       <itunes:author>Enrico Gebauer</itunes:author>
