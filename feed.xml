@@ -13,7 +13,62 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category>
-    <lastBuildDate>Fri, 14 Aug 2026 19:10:23 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 12:49:12 GMT</lastBuildDate>
+    <item>
+      <title>Control the Blast Radius</title>
+      <itunes:author>Enrico Gebauer</itunes:author>
+      <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-17.html</link>
+      <description>Three public engineering moves show agent validation becoming a layered system of deterministic containment, reproducible environments, and runtime evidence.
+
+Weekly episode - 18:17
+
+Episode webpage: https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-17.html
+
+Key takeaways:
+- Agent autonomy becomes safer when hard filesystem, network, credential, and tool boundaries replace repetitive approval prompts as the primary blast-radius control.
+- Versioned, continuously prepared environments strengthen test evidence by making setup provenance, freshness, and replay explicit.
+- Agent traces can convert production behavior into new evaluations, but their truncation, privacy defaults, retention, and cost must themselves be validated.
+
+Chapters:
+- 00:00 Contain, reproduce, and trace
+- 01:15 Anthropic and the limits of approval prompts
+- 06:10 Cursor makes environment provenance visible
+- 10:35 Cloudflare traces the agent runtime
+- 15:10 The layered evidence architecture
+- 16:20 Country sign-off: Hold the Line
+
+Stories and sources:
+
+Containment replaces approval fatigue
+Anthropic documents how sandboxes, virtual machines, filesystem boundaries, egress controls, capability-limited tools, and model defenses overlap to cap an agent&apos;s blast radius.
+Validation impact: Containment does not prove a change is correct, but executable boundary tests can establish that an incorrect or compromised agent cannot exceed its declared authority.
+Sources:
+- [headline] How we contain Claude across products (2026-08-12): https://www.anthropic.com/engineering/how-we-contain-claude
+
+Environment provenance becomes part of the evidence
+Cursor introduced continuously prepared cloud-agent builds, warm-machine startup, last-successful-build fallback, build logs, captured commit SHAs, and explicit run-to-build identity.
+Validation impact: A healthy, versioned environment is a prerequisite for credible test results; comparing original, current, and clean builds can expose stale setup, cached state, and non-hermetic validation.
+Sources:
+- [headline] Cloud agents start 3x faster with builds (2026-08-13): https://cursor.com/blog/builds
+
+Agent traces connect decisions to production effects
+Cloudflare agent tracing adds spans for invocations, model calls, tools, approvals, subagents, and infrastructure operations, with session replay for recorded activity.
+Validation impact: Runtime traces can seed reproducible evaluations and policy checks, but incomplete payloads, inconsistent privacy defaults, short retention, and span-based cost prevent treating replay as a lossless audit record.
+Sources:
+- [headline] Cloudflare Adds Agent Tracing, with Truncation Limits and Uneven Payload Defaults (2026-08-15): https://www.infoq.com/news/2026/08/cloudflare-agent-tracing/
+- [background] Agents on Cloudflare (2026-08-12): https://blog.cloudflare.com/agents-on-cloudflare/
+
+Country sign-off: Hold the Line - An original country sign-off about bounding agent authority, recording environment provenance, and tracing the evidence behind every green signal.
+
+AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
+      <content:encoded><![CDATA[<p class="episode-meta"><span class="badge">Weekly episode</span><span>18:17</span></p><p class="intro">Three public engineering moves show agent validation becoming a layered system of deterministic containment, reproducible environments, and runtime evidence.</p><audio id="episode-audio" controls preload="metadata" src="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779">Your browser does not support audio playback. <a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779">Download the episode MP3</a>.</audio><p class="episode-links"><a href="https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-17.html">Episode webpage</a><span aria-hidden="true"> · </span><a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779">Download MP3</a></p><section aria-labelledby="takeaways"><h2 id="takeaways">Key takeaways</h2><ul class="takeaways"><li>Agent autonomy becomes safer when hard filesystem, network, credential, and tool boundaries replace repetitive approval prompts as the primary blast-radius control.</li><li>Versioned, continuously prepared environments strengthen test evidence by making setup provenance, freshness, and replay explicit.</li><li>Agent traces can convert production behavior into new evaluations, but their truncation, privacy defaults, retention, and cost must themselves be validated.</li></ul></section><section aria-labelledby="chapters"><h2 id="chapters">Chapters</h2><ol class="chapters"><li><a class="chapter-link" data-seconds="0" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779#t=0"><time>00:00</time> Contain, reproduce, and trace</a></li><li><a class="chapter-link" data-seconds="75" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779#t=75"><time>01:15</time> Anthropic and the limits of approval prompts</a></li><li><a class="chapter-link" data-seconds="370" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779#t=370"><time>06:10</time> Cursor makes environment provenance visible</a></li><li><a class="chapter-link" data-seconds="635" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779#t=635"><time>10:35</time> Cloudflare traces the agent runtime</a></li><li><a class="chapter-link" data-seconds="910" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779#t=910"><time>15:10</time> The layered evidence architecture</a></li><li><a class="chapter-link" data-seconds="980" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779#t=980"><time>16:20</time> Country sign-off: Hold the Line</a></li></ol></section><section aria-labelledby="stories"><h2 id="stories">Stories and sources</h2><article><h3>Containment replaces approval fatigue</h3><p>Anthropic documents how sandboxes, virtual machines, filesystem boundaries, egress controls, capability-limited tools, and model defenses overlap to cap an agent's blast radius.</p><p class="impact"><strong>Validation impact:</strong> Containment does not prove a change is correct, but executable boundary tests can establish that an incorrect or compromised agent cannot exceed its declared authority.</p><ul class="sources"><li><a href="https://www.anthropic.com/engineering/how-we-contain-claude">How we contain Claude across products</a><span class="source-meta">Headline · August 12, 2026</span></li></ul></article><article><h3>Environment provenance becomes part of the evidence</h3><p>Cursor introduced continuously prepared cloud-agent builds, warm-machine startup, last-successful-build fallback, build logs, captured commit SHAs, and explicit run-to-build identity.</p><p class="impact"><strong>Validation impact:</strong> A healthy, versioned environment is a prerequisite for credible test results; comparing original, current, and clean builds can expose stale setup, cached state, and non-hermetic validation.</p><ul class="sources"><li><a href="https://cursor.com/blog/builds">Cloud agents start 3x faster with builds</a><span class="source-meta">Headline · August 13, 2026</span></li></ul></article><article><h3>Agent traces connect decisions to production effects</h3><p>Cloudflare agent tracing adds spans for invocations, model calls, tools, approvals, subagents, and infrastructure operations, with session replay for recorded activity.</p><p class="impact"><strong>Validation impact:</strong> Runtime traces can seed reproducible evaluations and policy checks, but incomplete payloads, inconsistent privacy defaults, short retention, and span-based cost prevent treating replay as a lossless audit record.</p><ul class="sources"><li><a href="https://www.infoq.com/news/2026/08/cloudflare-agent-tracing/">Cloudflare Adds Agent Tracing, with Truncation Limits and Uneven Payload Defaults</a><span class="source-meta">Headline · August 15, 2026</span></li><li><a href="https://blog.cloudflare.com/agents-on-cloudflare/">Agents on Cloudflare</a><span class="source-meta">Background · August 12, 2026</span></li></ul></article></section><section aria-labelledby="song"><h2 id="song">Country sign-off</h2><p><strong>Hold the Line</strong> — An original country sign-off about bounding agent authority, recording environment provenance, and tracing the evidence behind every green signal.</p></section><aside class="disclosure" aria-label="Production disclosure">AI-generated audio briefing curated by Enrico Gebauer from public sources.</aside>]]></content:encoded>
+      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-17.mp3?v=17870779" length="17870779" type="audio/mpeg" />
+      <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
+      <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-17.mp3-17870779</guid>
+      <pubDate>Mon, 17 Aug 2026 12:49:08 GMT</pubDate>
+      <itunes:duration>00:18:17</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Proof Before Velocity</title>
       <itunes:author>Enrico Gebauer</itunes:author>
