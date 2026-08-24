@@ -13,7 +13,68 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category>
-    <lastBuildDate>Mon, 17 Aug 2026 12:49:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 12:46:27 GMT</lastBuildDate>
+    <item>
+      <title>Test the Path, Not Just the Answer</title>
+      <itunes:author>Enrico Gebauer</itunes:author>
+      <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-24.html</link>
+      <description>Four new signals show why trustworthy agents must validate workflow structure, diagnostic evidence, production failure behavior, and the stability of learned improvements.
+
+Weekly episode - 17:51
+
+Episode webpage: https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-24.html
+
+Key takeaways:
+- Natural-language workflows become more reliable when consequential transitions are compiled into explicit artifacts, constraints, control flow, and local faithfulness checks.
+- A correct diagnosis is not enough for automated remediation; the evidence path, fault propagation, proposed action, and predicted production response must also be verified.
+- Self-improvement claims need repeated runs, shuffled task orders, versioned memory, and rollback because one noisy lesson can alter many future tasks.
+- Capacity envelopes, retry budgets, isolation, and recovery behavior belong in release validation whenever autonomous clients can amplify production load.
+
+Chapters:
+- 00:00 Why the path matters as much as the answer
+- 01:10 Compiling agent workflows into checkable artifacts
+- 05:20 Verifying the evidence behind automated RCA
+- 09:30 What GitHub&apos;s outage teaches about release safety
+- 13:25 Stress-testing self-improving agents
+- 16:30 Country sign-off: Show Me the Trail
+
+Stories and sources:
+
+Compile consequential workflows before execution
+Artic transforms natural-language workflows into explicit artifact dependencies, constraints, and control transfers, then checks compilation faithfulness through local obligations and scenario-based dry runs.
+Validation impact: The approach makes workflow failures attributable and lets teams place stronger gates at high-consequence transitions instead of relying on global prompt compliance.
+Sources:
+- [headline] Natural-Language Workflows Are Not Software Yet: Artifact-Driven Compilation for Reliable Agent Execution (2026-08-21): https://arxiv.org/abs/2608.21341
+
+A correct diagnosis can still have an unsafe evidence path
+A trajectory-level study of 3,500 microservice investigations finds that agents can identify the correct fault source while omitting decisive telemetry or failing to reconstruct fault propagation.
+Validation impact: Automated remediation should require evidence coverage, a verified causal path, bounded reversible action, and a prediction that can be checked against production telemetry.
+Sources:
+- [headline] Beyond Fault Localization: A Trajectory-Level Study of LLM Agents for Microservice Root Cause Analysis (2026-08-21): https://arxiv.org/abs/2608.21310
+
+Retry behavior becomes part of the production safety case
+GitHub&apos;s August 17 outage lasted seven hours and forty-seven minutes, with Copilot client retries amplifying load during recovery after a critical capacity failure.
+Validation impact: Capacity models, retry budgets, backoff, idempotency, service isolation, and degraded-dependency behavior must be tested when automated clients can multiply recovery traffic.
+Sources:
+- [headline] The August 17 outage, and the work ahead (2026-08-20): https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/
+
+Self-improvement must survive repeated runs and shuffled curricula
+Salesforce AI Research finds that memory-based self-improving agents amplify evaluation noise and depend heavily on task order, while richer rubrics and environment feedback only partially close the reliability gap.
+Validation impact: Treat agent memory like a versioned production artifact: evaluate candidate changes across multiple runs, reordered tasks, held-out cases, and downside distributions before promotion.
+Sources:
+- [headline] On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification (2026-08-18): https://arxiv.org/abs/2608.18066
+
+Country sign-off: Show Me the Trail - An original country sign-off about requiring reproducible evidence for every agent decision, diagnosis, and learned improvement.
+
+AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
+      <content:encoded><![CDATA[<p class="episode-meta"><span class="badge">Weekly episode</span><span>17:51</span></p><p class="intro">Four new signals show why trustworthy agents must validate workflow structure, diagnostic evidence, production failure behavior, and the stability of learned improvements.</p><audio id="episode-audio" controls preload="metadata" src="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518">Your browser does not support audio playback. <a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518">Download the episode MP3</a>.</audio><p class="episode-links"><a href="https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-24.html">Episode webpage</a><span aria-hidden="true"> · </span><a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518">Download MP3</a></p><section aria-labelledby="takeaways"><h2 id="takeaways">Key takeaways</h2><ul class="takeaways"><li>Natural-language workflows become more reliable when consequential transitions are compiled into explicit artifacts, constraints, control flow, and local faithfulness checks.</li><li>A correct diagnosis is not enough for automated remediation; the evidence path, fault propagation, proposed action, and predicted production response must also be verified.</li><li>Self-improvement claims need repeated runs, shuffled task orders, versioned memory, and rollback because one noisy lesson can alter many future tasks.</li><li>Capacity envelopes, retry budgets, isolation, and recovery behavior belong in release validation whenever autonomous clients can amplify production load.</li></ul></section><section aria-labelledby="chapters"><h2 id="chapters">Chapters</h2><ol class="chapters"><li><a class="chapter-link" data-seconds="0" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518#t=0"><time>00:00</time> Why the path matters as much as the answer</a></li><li><a class="chapter-link" data-seconds="70" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518#t=70"><time>01:10</time> Compiling agent workflows into checkable artifacts</a></li><li><a class="chapter-link" data-seconds="320" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518#t=320"><time>05:20</time> Verifying the evidence behind automated RCA</a></li><li><a class="chapter-link" data-seconds="570" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518#t=570"><time>09:30</time> What GitHub's outage teaches about release safety</a></li><li><a class="chapter-link" data-seconds="805" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518#t=805"><time>13:25</time> Stress-testing self-improving agents</a></li><li><a class="chapter-link" data-seconds="990" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518#t=990"><time>16:30</time> Country sign-off: Show Me the Trail</a></li></ol></section><section aria-labelledby="stories"><h2 id="stories">Stories and sources</h2><article><h3>Compile consequential workflows before execution</h3><p>Artic transforms natural-language workflows into explicit artifact dependencies, constraints, and control transfers, then checks compilation faithfulness through local obligations and scenario-based dry runs.</p><p class="impact"><strong>Validation impact:</strong> The approach makes workflow failures attributable and lets teams place stronger gates at high-consequence transitions instead of relying on global prompt compliance.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2608.21341">Natural-Language Workflows Are Not Software Yet: Artifact-Driven Compilation for Reliable Agent Execution</a><span class="source-meta">Headline · August 21, 2026</span></li></ul></article><article><h3>A correct diagnosis can still have an unsafe evidence path</h3><p>A trajectory-level study of 3,500 microservice investigations finds that agents can identify the correct fault source while omitting decisive telemetry or failing to reconstruct fault propagation.</p><p class="impact"><strong>Validation impact:</strong> Automated remediation should require evidence coverage, a verified causal path, bounded reversible action, and a prediction that can be checked against production telemetry.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2608.21310">Beyond Fault Localization: A Trajectory-Level Study of LLM Agents for Microservice Root Cause Analysis</a><span class="source-meta">Headline · August 21, 2026</span></li></ul></article><article><h3>Retry behavior becomes part of the production safety case</h3><p>GitHub's August 17 outage lasted seven hours and forty-seven minutes, with Copilot client retries amplifying load during recovery after a critical capacity failure.</p><p class="impact"><strong>Validation impact:</strong> Capacity models, retry budgets, backoff, idempotency, service isolation, and degraded-dependency behavior must be tested when automated clients can multiply recovery traffic.</p><ul class="sources"><li><a href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/">The August 17 outage, and the work ahead</a><span class="source-meta">Headline · August 20, 2026</span></li></ul></article><article><h3>Self-improvement must survive repeated runs and shuffled curricula</h3><p>Salesforce AI Research finds that memory-based self-improving agents amplify evaluation noise and depend heavily on task order, while richer rubrics and environment feedback only partially close the reliability gap.</p><p class="impact"><strong>Validation impact:</strong> Treat agent memory like a versioned production artifact: evaluate candidate changes across multiple runs, reordered tasks, held-out cases, and downside distributions before promotion.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2608.18066">On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification</a><span class="source-meta">Headline · August 18, 2026</span></li></ul></article></section><section aria-labelledby="song"><h2 id="song">Country sign-off</h2><p><strong>Show Me the Trail</strong> — An original country sign-off about requiring reproducible evidence for every agent decision, diagnosis, and learned improvement.</p></section><aside class="disclosure" aria-label="Production disclosure">AI-generated audio briefing curated by Enrico Gebauer from public sources.</aside>]]></content:encoded>
+      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-24.mp3?v=17459518" length="17459518" type="audio/mpeg" />
+      <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
+      <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-24.mp3-17459518</guid>
+      <pubDate>Mon, 24 Aug 2026 12:46:23 GMT</pubDate>
+      <itunes:duration>00:17:51</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Control the Blast Radius</title>
       <itunes:author>Enrico Gebauer</itunes:author>
