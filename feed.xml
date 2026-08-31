@@ -13,7 +13,68 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category>
-    <lastBuildDate>Mon, 24 Aug 2026 12:46:27 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 12:45:29 GMT</lastBuildDate>
+    <item>
+      <title>Make the Green Mean Something</title>
+      <itunes:author>Enrico Gebauer</itunes:author>
+      <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-31.html</link>
+      <description>Four developments show validation moving toward product-shaped evaluation, causal repair evidence, repository-level generated tests, and mutation-backed boundary exploration.
+
+Weekly episode - 20:44
+
+Episode webpage: https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-31.html
+
+Key takeaways:
+- Production readiness should combine an explicit product outcome with asymmetric safety constraints, operational guardrails, reproducible offline evaluation, and controlled online evidence.
+- A successful rerun is not proof of repair; controlled replay and negative controls help distinguish causal intervention from stochastic resampling.
+- Generated tests should prove that they invoke intended behavior and discriminate faulty implementations inside realistic repositories.
+- Agentic boundary exploration becomes trustworthy when execution and mutation evidence determine which creative test strategies survive.
+
+Chapters:
+- 00:00 Why a green result needs evidence
+- 01:05 GitHub&apos;s production evaluation lifecycle
+- 05:20 SymTrace separates repair from resampling
+- 09:15 XREPOTEST asks whether generated tests really test
+- 13:10 ABEX searches the behavioral boundary
+- 16:40 Country sign-off: Make the Green Mean Something
+
+Stories and sources:
+
+Evaluation begins with a product decision
+GitHub describes a repeatable evaluation lifecycle that separates product outcomes, asymmetric safety constraints, and operational guardrails while keeping offline tests close to production.
+Validation impact: Version prompts, models, data, labels, and pipeline configuration; use error analysis and judge-assisted triage to earn a controlled online experiment rather than treating offline scores as deployment proof.
+Sources:
+- [headline] How to evaluate LLMs before production (2026-08-25): https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/
+
+Controlled replay distinguishes repair from luck
+SymTrace reconstructs recorded multi-agent execution before an intervention anchor and regenerates only the downstream path, enabling more credible attribution of repair outcomes.
+Validation impact: Measure failure reproduction before repair, compare targeted interventions with negative controls, and promote fixes only when they improve repeated downstream outcomes against the same captured state.
+Sources:
+- [headline] Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems (2026-08-26): https://arxiv.org/abs/2608.25920
+
+Generated tests must invoke and discriminate
+XREPOTEST evaluates generated unit tests inside multilingual repositories and adds Invocation Rate to distinguish passing tests from tests that meaningfully exercise their target.
+Validation impact: A useful promotion funnel should require compilation, execution, target invocation, relevant coverage, mutation detection, repeated-run stability, and repository-wide compatibility.
+Sources:
+- [headline] XREPOTEST: Benchmarking Multilingual Repository-Level Unit Test Generation for Large Language Models (2026-08-26): https://arxiv.org/abs/2608.25939
+
+Agents discover boundaries; mutation testing judges them
+ABEX generates and reuses boundary-exploration strategies across numeric, string, array, and mixed inputs, guided by execution feedback and a quality-diversity archive.
+Validation impact: Creative test generation should earn trust through observable behavioral transitions and fault revelation, with strategy versions, budget controls, and revalidation as the target evolves.
+Sources:
+- [headline] Adaptive Strategy Generation for Boundary Value Exploration Beyond Numeric Inputs (2026-08-28): https://arxiv.org/abs/2608.28230
+
+Country sign-off: Make the Green Mean Something - An original country sign-off about requiring causal, execution-backed evidence before trusting a passing result.
+
+AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
+      <content:encoded><![CDATA[<p class="episode-meta"><span class="badge">Weekly episode</span><span>20:44</span></p><p class="intro">Four developments show validation moving toward product-shaped evaluation, causal repair evidence, repository-level generated tests, and mutation-backed boundary exploration.</p><audio id="episode-audio" controls preload="metadata" src="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656">Your browser does not support audio playback. <a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656">Download the episode MP3</a>.</audio><p class="episode-links"><a href="https://enricogebauer.github.io/validation-clarity-radar/notes/2026-08-31.html">Episode webpage</a><span aria-hidden="true"> · </span><a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656">Download MP3</a></p><section aria-labelledby="takeaways"><h2 id="takeaways">Key takeaways</h2><ul class="takeaways"><li>Production readiness should combine an explicit product outcome with asymmetric safety constraints, operational guardrails, reproducible offline evaluation, and controlled online evidence.</li><li>A successful rerun is not proof of repair; controlled replay and negative controls help distinguish causal intervention from stochastic resampling.</li><li>Generated tests should prove that they invoke intended behavior and discriminate faulty implementations inside realistic repositories.</li><li>Agentic boundary exploration becomes trustworthy when execution and mutation evidence determine which creative test strategies survive.</li></ul></section><section aria-labelledby="chapters"><h2 id="chapters">Chapters</h2><ol class="chapters"><li><a class="chapter-link" data-seconds="0" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656#t=0"><time>00:00</time> Why a green result needs evidence</a></li><li><a class="chapter-link" data-seconds="65" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656#t=65"><time>01:05</time> GitHub's production evaluation lifecycle</a></li><li><a class="chapter-link" data-seconds="320" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656#t=320"><time>05:20</time> SymTrace separates repair from resampling</a></li><li><a class="chapter-link" data-seconds="555" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656#t=555"><time>09:15</time> XREPOTEST asks whether generated tests really test</a></li><li><a class="chapter-link" data-seconds="790" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656#t=790"><time>13:10</time> ABEX searches the behavioral boundary</a></li><li><a class="chapter-link" data-seconds="1000" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656#t=1000"><time>16:40</time> Country sign-off: Make the Green Mean Something</a></li></ol></section><section aria-labelledby="stories"><h2 id="stories">Stories and sources</h2><article><h3>Evaluation begins with a product decision</h3><p>GitHub describes a repeatable evaluation lifecycle that separates product outcomes, asymmetric safety constraints, and operational guardrails while keeping offline tests close to production.</p><p class="impact"><strong>Validation impact:</strong> Version prompts, models, data, labels, and pipeline configuration; use error analysis and judge-assisted triage to earn a controlled online experiment rather than treating offline scores as deployment proof.</p><ul class="sources"><li><a href="https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/">How to evaluate LLMs before production</a><span class="source-meta">Headline · August 25, 2026</span></li></ul></article><article><h3>Controlled replay distinguishes repair from luck</h3><p>SymTrace reconstructs recorded multi-agent execution before an intervention anchor and regenerates only the downstream path, enabling more credible attribution of repair outcomes.</p><p class="impact"><strong>Validation impact:</strong> Measure failure reproduction before repair, compare targeted interventions with negative controls, and promote fixes only when they improve repeated downstream outcomes against the same captured state.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2608.25920">Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems</a><span class="source-meta">Headline · August 26, 2026</span></li></ul></article><article><h3>Generated tests must invoke and discriminate</h3><p>XREPOTEST evaluates generated unit tests inside multilingual repositories and adds Invocation Rate to distinguish passing tests from tests that meaningfully exercise their target.</p><p class="impact"><strong>Validation impact:</strong> A useful promotion funnel should require compilation, execution, target invocation, relevant coverage, mutation detection, repeated-run stability, and repository-wide compatibility.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2608.25939">XREPOTEST: Benchmarking Multilingual Repository-Level Unit Test Generation for Large Language Models</a><span class="source-meta">Headline · August 26, 2026</span></li></ul></article><article><h3>Agents discover boundaries; mutation testing judges them</h3><p>ABEX generates and reuses boundary-exploration strategies across numeric, string, array, and mixed inputs, guided by execution feedback and a quality-diversity archive.</p><p class="impact"><strong>Validation impact:</strong> Creative test generation should earn trust through observable behavioral transitions and fault revelation, with strategy versions, budget controls, and revalidation as the target evolves.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2608.28230">Adaptive Strategy Generation for Boundary Value Exploration Beyond Numeric Inputs</a><span class="source-meta">Headline · August 28, 2026</span></li></ul></article></section><section aria-labelledby="song"><h2 id="song">Country sign-off</h2><p><strong>Make the Green Mean Something</strong> — An original country sign-off about requiring causal, execution-backed evidence before trusting a passing result.</p></section><aside class="disclosure" aria-label="Production disclosure">AI-generated audio briefing curated by Enrico Gebauer from public sources.</aside>]]></content:encoded>
+      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-08-31.mp3?v=20227656" length="20227656" type="audio/mpeg" />
+      <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
+      <guid isPermaLink="false">Validation-Clarity-Radar-2026-08-31.mp3-20227656</guid>
+      <pubDate>Mon, 31 Aug 2026 12:45:25 GMT</pubDate>
+      <itunes:duration>00:20:44</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Test the Path, Not Just the Answer</title>
       <itunes:author>Enrico Gebauer</itunes:author>
