@@ -62,6 +62,11 @@
     .reason { margin: 6px 0 0; color: #374157; }
     .usage { margin-top: 13px; padding-top: 12px; border-top: 1px solid var(--line); }
     .usage a { font-weight: 700; }
+    .nominate-row { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 14px; }
+    .nominate-button { display: inline-flex; align-items: center; border-radius: 9px; background: var(--blue); color: #fff; padding: 8px 12px; font-weight: 800; text-decoration: none; }
+    .nominate-button:hover { background: #2446b8; }
+    .nomination-note { color: var(--muted); font-size: 13px; }
+    .nominated { background: #dff5e8; color: var(--green); }
     .empty, .error { padding: 28px; text-align: center; background: var(--card); border-radius: 14px; border: 1px solid var(--line); }
     .error { color: var(--red); }
     footer { padding: 24px 0 40px; color: var(--muted); font-size: 13px; }
@@ -149,6 +154,7 @@
   <script>
     const els = Object.fromEntries(['total','selected','used','latest','search','radar','status','usage','sort','resultCount','updated','cards'].map(id => [id, document.getElementById(id)]));
     let catalog = { candidates: [] };
+    let nominations = new Map();
     const text = (tag, value, className) => {
       const el = document.createElement(tag);
       if (className) el.className = className;
@@ -177,6 +183,15 @@
       return el;
     };
     const dateText = value => value ? new Date(`${value}T00:00:00`).toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' }) : '';
+    const nominationUrl = item => {
+      const marker = `<!-- radar-nomination:v1 candidate-id=${item.id} radar=validation -->`;
+      const body = `${marker}\n\n## Source\n\n- Title: ${item.title}\n- URL: ${item.url}\n- Candidate ID: \`${item.id}\`\n\n## Request\n\nPlease prioritize this public source for the next podcast episode.`;
+      const params = new URLSearchParams({
+        title: `[Episode nomination] ${item.title}`,
+        body
+      });
+      return `https://github.com/enricogebauer/validation-clarity-radar/issues/new?${params}`;
+    };
 
     function renderCard(item) {
       const card = text('article', '', 'card');
@@ -213,6 +228,28 @@
         });
         usage.append(list); card.append(usage);
       }
+      const validation = item.radars.find(radar => radar.id === 'validation');
+      const nomination = nominations.get(item.id);
+      const alreadyInPodcast = item.usages.some(entry => entry.outputType === 'podcast');
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+      const published = new Date(`${item.publishedDate}T00:00:00`).getTime();
+      const ageDays = (today - published) / (24 * 60 * 60 * 1000);
+      const withinEpisodeWindow = ageDays >= 0 && ageDays <= 7;
+      if (nomination) {
+        const row = text('div', '', 'nominate-row');
+        const badge = chip('Nominated for next episode', 'nominated');
+        const issue = text('a', `View issue #${nomination.number}`);
+        issue.href = nomination.html_url; issue.target = '_blank'; issue.rel = 'noopener noreferrer';
+        row.append(badge, issue);
+        card.append(row);
+      } else if (validation && ['candidate','held'].includes(validation.status) && !alreadyInPodcast && withinEpisodeWindow) {
+        const row = text('div', '', 'nominate-row');
+        const link = text('a', 'Nominate for next episode', 'nominate-button');
+        link.href = nominationUrl(item); link.target = '_blank'; link.rel = 'noopener noreferrer';
+        row.append(link, text('span', 'Confirm the prefilled issue while signed in as enricogebauer.', 'nomination-note'));
+        card.append(row);
+      }
       return card;
     }
 
@@ -241,13 +278,24 @@
       els.cards.replaceChildren(...(items.length ? items.map(renderCard) : [text('div', 'No sources match these filters.', 'empty')]));
     }
 
-    fetch('sources.json', { cache: 'no-store' })
-      .then(response => {
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
-      })
-      .then(data => {
+    const sourcesRequest = fetch('sources.json', { cache: 'no-store' }).then(response => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    });
+    const nominationsRequest = fetch('https://api.github.com/repos/enricogebauer/validation-clarity-radar/issues?state=open&per_page=100', {
+      headers: { Accept: 'application/vnd.github+json' }
+    }).then(response => response.ok ? response.json() : []).catch(() => []);
+
+    Promise.all([sourcesRequest, nominationsRequest])
+      .then(([data, issues]) => {
         catalog = data;
+        nominations = new Map(issues.flatMap(issue => {
+          if (issue.pull_request || issue.state !== 'open' || issue.user?.login !== 'enricogebauer') return [];
+          const matches = [...String(issue.body || '').matchAll(/<!--\s*radar-nomination:v1\s+candidate-id=([a-f0-9]{20})\s+radar=(productMakers|validation)\s*-->/gi)];
+          return matches.length === 1 && matches[0][2].toLowerCase() === 'validation'
+            ? [[matches[0][1].toLowerCase(), issue]]
+            : [];
+        }));
         const candidates = data.candidates || [];
         els.total.textContent = candidates.length;
         els.selected.textContent = candidates.filter(c => c.radars.some(r => r.status === 'selected')).length;
