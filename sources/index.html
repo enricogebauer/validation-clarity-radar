@@ -32,13 +32,18 @@
     .toplinks a { color: #fff; font-weight: 700; }
     main { padding: 26px 0 64px; }
     .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
-    .metric, .controls, .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+    .metric, .controls, .card, .question-guide { background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
     .metric { padding: 14px 16px; }
     .metric strong { display: block; font-size: 25px; }
     .metric span { color: var(--muted); font-size: 13px; }
     .controls { display: grid; grid-template-columns: minmax(220px, 2fr) repeat(4, minmax(130px, 1fr)); gap: 12px; padding: 14px; position: sticky; top: 8px; z-index: 3; }
     input, select { width: 100%; border: 1px solid #c8d0de; border-radius: 9px; background: #fff; color: var(--ink); padding: 10px 11px; font: inherit; }
     .resultline { display: flex; justify-content: space-between; gap: 15px; margin: 20px 2px 10px; color: var(--muted); }
+    .question-guide { margin-bottom: 18px; padding: 0 16px; }
+    .question-guide summary { cursor: pointer; padding: 13px 0; color: var(--blue); font-weight: 800; }
+    .question-guide dl { display: grid; grid-template-columns: auto 1fr; gap: 7px 12px; margin: 0 0 16px; }
+    .question-guide dt { font-weight: 800; color: var(--blue); }
+    .question-guide dd { margin: 0; color: #374157; }
     #cards { display: grid; gap: 14px; }
     .card { padding: 20px; }
     .card h2 { margin: 3px 0 4px; font-size: 21px; line-height: 1.3; }
@@ -64,6 +69,8 @@
       .metrics { grid-template-columns: repeat(2, 1fr); }
       .controls { grid-template-columns: 1fr 1fr; position: static; }
       .controls input { grid-column: 1 / -1; }
+      .question-guide dl { grid-template-columns: 1fr; gap: 2px; }
+      .question-guide dd { margin-bottom: 7px; }
     }
     @media (max-width: 540px) {
       .shell { width: min(100% - 20px, 1180px); }
@@ -93,6 +100,21 @@
       <div class="metric"><strong id="used">-</strong><span>used in published outputs</span></div>
       <div class="metric"><strong id="latest">-</strong><span>latest discovery</span></div>
     </section>
+    <details class="question-guide">
+      <summary>What do Q1-Q10 mean?</summary>
+      <dl>
+        <dt>Q1</dt><dd>Trustworthy ship signal - is a change safe to merge or release?</dd>
+        <dt>Q2</dt><dd>Defending against low-quality AI-generated code.</dd>
+        <dt>Q3</dt><dd>Test debt, flaky tests, and product-owned tests.</dd>
+        <dt>Q4</dt><dd>Moving from failure analysis to automatic repair.</dd>
+        <dt>Q5</dt><dd>Validation return on investment and risk-based testing.</dd>
+        <dt>Q6</dt><dd>Test speed, virtualization, and test environments.</dd>
+        <dt>Q7</dt><dd>The future of validation as agents write more code.</dd>
+        <dt>Q8</dt><dd>Cross-platform and configuration validation.</dd>
+        <dt>Q9</dt><dd>Alternatives to traditional test automation.</dd>
+        <dt>Q10</dt><dd>Using production and runtime signals in safety decisions.</dd>
+      </dl>
+    </details>
     <section class="controls" aria-label="Source filters">
       <input id="search" type="search" placeholder="Search title, source, summary, rationale..." aria-label="Search sources">
       <select id="radar" aria-label="Filter by radar">
@@ -134,6 +156,26 @@
       return el;
     };
     const chip = (value, extra = '') => text('span', value, `chip ${extra}`.trim());
+    const questions = {
+      Q1: 'Trustworthy ship signal - is a change safe to merge or release?',
+      Q2: 'Defending against low-quality AI-generated code.',
+      Q3: 'Test debt, flaky tests, and product-owned tests.',
+      Q4: 'Moving from failure analysis to automatic repair.',
+      Q5: 'Validation return on investment and risk-based testing.',
+      Q6: 'Test speed, virtualization, and test environments.',
+      Q7: 'The future of validation as agents write more code.',
+      Q8: 'Cross-platform and configuration validation.',
+      Q9: 'Alternatives to traditional test automation.',
+      Q10: 'Using production and runtime signals in safety decisions.'
+    };
+    const tagChip = value => {
+      if (!questions[value]) return chip(value);
+      const el = text('abbr', value, 'chip');
+      el.title = questions[value];
+      el.setAttribute('aria-label', `${value}: ${questions[value]}`);
+      el.tabIndex = 0;
+      return el;
+    };
     const dateText = value => value ? new Date(`${value}T00:00:00`).toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' }) : '';
 
     function renderCard(item) {
@@ -153,7 +195,7 @@
         const block = text('section', '', 'radar');
         const title = text('div', '', 'radar-title');
         title.append(text('span', radar.label), chip(radar.status, `status-${radar.status}`), chip(`Relevance: ${radar.relevance}`), chip(`Discussion: ${radar.discussionPotential}`));
-        radar.tags.forEach(tag => title.append(chip(tag)));
+        radar.tags.forEach(tag => title.append(tagChip(tag)));
         block.append(title);
         if (radar.publicRationale) block.append(text('p', radar.publicRationale, 'reason'));
         card.append(block);
