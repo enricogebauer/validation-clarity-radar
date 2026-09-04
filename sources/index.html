@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Public-source catalog for the Validation Clarity and AI Product-Makers radars.">
+  <title>Radar Source Catalog</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #647086;
+      --paper: #f4f6fa;
+      --card: #ffffff;
+      --line: #dce2ec;
+      --blue: #3157d5;
+      --cyan: #0b7285;
+      --green: #1f7a4d;
+      --amber: #9a6700;
+      --red: #b42318;
+      --shadow: 0 12px 34px rgba(26, 39, 67, .08);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.55 system-ui, -apple-system, Segoe UI, sans-serif; }
+    a { color: var(--blue); }
+    header { background: linear-gradient(125deg, #111a35, #243f8c 58%, #087184); color: #fff; padding: 48px 20px 38px; }
+    .shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    .eyebrow { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; opacity: .76; }
+    h1 { margin: 0; font-size: clamp(30px, 5vw, 50px); line-height: 1.08; }
+    .lede { max-width: 780px; margin: 14px 0 0; color: #dce8ff; font-size: 17px; }
+    .toplinks { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; }
+    .toplinks a { color: #fff; font-weight: 700; }
+    main { padding: 26px 0 64px; }
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+    .metric, .controls, .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+    .metric { padding: 14px 16px; }
+    .metric strong { display: block; font-size: 25px; }
+    .metric span { color: var(--muted); font-size: 13px; }
+    .controls { display: grid; grid-template-columns: minmax(220px, 2fr) repeat(4, minmax(130px, 1fr)); gap: 12px; padding: 14px; position: sticky; top: 8px; z-index: 3; }
+    input, select { width: 100%; border: 1px solid #c8d0de; border-radius: 9px; background: #fff; color: var(--ink); padding: 10px 11px; font: inherit; }
+    .resultline { display: flex; justify-content: space-between; gap: 15px; margin: 20px 2px 10px; color: var(--muted); }
+    #cards { display: grid; gap: 14px; }
+    .card { padding: 20px; }
+    .card h2 { margin: 3px 0 4px; font-size: 21px; line-height: 1.3; }
+    .card h2 a { color: var(--ink); text-decoration: none; }
+    .card h2 a:hover { color: var(--blue); text-decoration: underline; }
+    .meta, .chips, .usage-list { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .summary { margin: 13px 0; }
+    .chip { display: inline-flex; align-items: center; border-radius: 999px; background: #edf1f7; color: #445068; padding: 3px 9px; font-size: 12px; font-weight: 700; }
+    .status-selected { background: #dff5e8; color: var(--green); }
+    .status-held { background: #fff1ca; color: var(--amber); }
+    .status-rejected, .status-expired { background: #fee4e2; color: var(--red); }
+    .status-candidate { background: #e6edff; color: var(--blue); }
+    .radar { margin-top: 13px; border-left: 3px solid #b8c6e8; padding-left: 12px; }
+    .radar-title { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; font-weight: 800; }
+    .reason { margin: 6px 0 0; color: #374157; }
+    .usage { margin-top: 13px; padding-top: 12px; border-top: 1px solid var(--line); }
+    .usage a { font-weight: 700; }
+    .empty, .error { padding: 28px; text-align: center; background: var(--card); border-radius: 14px; border: 1px solid var(--line); }
+    .error { color: var(--red); }
+    footer { padding: 24px 0 40px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 900px) {
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      .controls { grid-template-columns: 1fr 1fr; position: static; }
+      .controls input { grid-column: 1 / -1; }
+    }
+    @media (max-width: 540px) {
+      .shell { width: min(100% - 20px, 1180px); }
+      header { padding-top: 34px; }
+      .metrics, .controls { grid-template-columns: 1fr; }
+      .controls input { grid-column: auto; }
+      .card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <p class="eyebrow">Public intelligence ledger</p>
+      <h1>Radar Source Catalog</h1>
+      <p class="lede">The public sources screened for the Validation Clarity and AI Product-Makers radars, including editorial decisions and links to published episodes.</p>
+      <nav class="toplinks" aria-label="Related links">
+        <a href="../feed.xml">Podcast feed</a>
+        <a href="../notes/">Episode notes</a>
+      </nav>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="metrics" aria-label="Catalog summary">
+      <div class="metric"><strong id="total">-</strong><span>screened sources</span></div>
+      <div class="metric"><strong id="selected">-</strong><span>selected sources</span></div>
+      <div class="metric"><strong id="used">-</strong><span>used in published outputs</span></div>
+      <div class="metric"><strong id="latest">-</strong><span>latest discovery</span></div>
+    </section>
+    <section class="controls" aria-label="Source filters">
+      <input id="search" type="search" placeholder="Search title, source, summary, rationale..." aria-label="Search sources">
+      <select id="radar" aria-label="Filter by radar">
+        <option value="all">All radars</option>
+        <option value="validation">Validation Clarity</option>
+        <option value="productMakers">AI Product-Makers</option>
+      </select>
+      <select id="status" aria-label="Filter by status">
+        <option value="all">All statuses</option>
+        <option value="candidate">Candidate</option>
+        <option value="selected">Selected</option>
+        <option value="held">Held</option>
+        <option value="rejected">Rejected</option>
+        <option value="expired">Expired</option>
+      </select>
+      <select id="usage" aria-label="Filter by usage">
+        <option value="all">Used and unused</option>
+        <option value="used">Used in an output</option>
+        <option value="unused">Not yet used</option>
+      </select>
+      <select id="sort" aria-label="Sort sources">
+        <option value="published">Newest published</option>
+        <option value="discovered">Newest discovered</option>
+        <option value="selected">Selected first</option>
+        <option value="source">Source name</option>
+      </select>
+    </section>
+    <div class="resultline"><span id="resultCount">Loading sources...</span><span id="updated"></span></div>
+    <section id="cards" aria-live="polite"></section>
+  </main>
+  <footer class="shell">Only public-source metadata is published here. Internal context and unpublished material are excluded by the exporter.</footer>
+  <script>
+    const els = Object.fromEntries(['total','selected','used','latest','search','radar','status','usage','sort','resultCount','updated','cards'].map(id => [id, document.getElementById(id)]));
+    let catalog = { candidates: [] };
+    const text = (tag, value, className) => {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      el.textContent = value;
+      return el;
+    };
+    const chip = (value, extra = '') => text('span', value, `chip ${extra}`.trim());
+    const dateText = value => value ? new Date(`${value}T00:00:00`).toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' }) : '';
+
+    function renderCard(item) {
+      const card = text('article', '', 'card');
+      const meta = text('div', '', 'meta');
+      meta.append(chip(item.sourceType), text('span', item.source), text('span', `Published ${dateText(item.publishedDate)}`), text('span', `Discovered ${dateText(item.discoveredDate)}`));
+      card.append(meta);
+      const h2 = document.createElement('h2');
+      const link = text('a', item.title);
+      link.href = item.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      h2.append(link); card.append(h2, text('p', item.summary, 'summary'));
+      const quality = text('div', '', 'chips');
+      quality.append(chip(`Evidence: ${item.evidenceQuality}`), chip(`Novelty: ${item.novelty}`));
+      card.append(quality);
+
+      item.radars.forEach(radar => {
+        const block = text('section', '', 'radar');
+        const title = text('div', '', 'radar-title');
+        title.append(text('span', radar.label), chip(radar.status, `status-${radar.status}`), chip(`Relevance: ${radar.relevance}`), chip(`Discussion: ${radar.discussionPotential}`));
+        radar.tags.forEach(tag => title.append(chip(tag)));
+        block.append(title);
+        if (radar.publicRationale) block.append(text('p', radar.publicRationale, 'reason'));
+        card.append(block);
+      });
+
+      if (item.usages.length) {
+        const usage = text('section', '', 'usage');
+        usage.append(text('strong', 'Used in: '));
+        const list = text('span', '', 'usage-list');
+        item.usages.forEach((entry, index) => {
+          const link = text('a', `${entry.outputTitle} - ${entry.storyTitle}`);
+          link.href = entry.outputUrl; link.target = '_blank'; link.rel = 'noopener noreferrer';
+          list.append(link);
+          if (index < item.usages.length - 1) list.append(text('span', ' / '));
+        });
+        usage.append(list); card.append(usage);
+      }
+      return card;
+    }
+
+    function render() {
+      const query = els.search.value.trim().toLowerCase();
+      const radar = els.radar.value;
+      const status = els.status.value;
+      const usage = els.usage.value;
+      let items = catalog.candidates.filter(item => {
+        const projections = radar === 'all' ? item.radars : item.radars.filter(r => r.id === radar);
+        if (!projections.length) return false;
+        if (status !== 'all' && !projections.some(r => r.status === status)) return false;
+        if (usage === 'used' && !item.usages.length) return false;
+        if (usage === 'unused' && item.usages.length) return false;
+        const haystack = [item.title, item.source, item.summary, ...projections.flatMap(r => [r.label, r.status, r.publicRationale || '', ...r.tags])].join(' ').toLowerCase();
+        return !query || haystack.includes(query);
+      });
+      const sorters = {
+        published: (a,b) => b.publishedDate.localeCompare(a.publishedDate) || a.title.localeCompare(b.title),
+        discovered: (a,b) => b.discoveredDate.localeCompare(a.discoveredDate) || a.title.localeCompare(b.title),
+        selected: (a,b) => Number(b.radars.some(r => r.status === 'selected')) - Number(a.radars.some(r => r.status === 'selected')) || b.publishedDate.localeCompare(a.publishedDate),
+        source: (a,b) => a.source.localeCompare(b.source) || a.title.localeCompare(b.title)
+      };
+      items.sort(sorters[els.sort.value]);
+      els.resultCount.textContent = `${items.length} source${items.length === 1 ? '' : 's'} shown`;
+      els.cards.replaceChildren(...(items.length ? items.map(renderCard) : [text('div', 'No sources match these filters.', 'empty')]));
+    }
+
+    fetch('sources.json', { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then(data => {
+        catalog = data;
+        const candidates = data.candidates || [];
+        els.total.textContent = candidates.length;
+        els.selected.textContent = candidates.filter(c => c.radars.some(r => r.status === 'selected')).length;
+        els.used.textContent = candidates.filter(c => c.usages.length).length;
+        els.latest.textContent = candidates.reduce((latest, c) => c.discoveredDate > latest ? c.discoveredDate : latest, '-');
+        els.updated.textContent = `Updated ${new Date(data.generatedAt).toLocaleString()}`;
+        render();
+      })
+      .catch(error => {
+        els.resultCount.textContent = 'Unable to load source catalog';
+        els.cards.replaceChildren(text('div', `The source catalog could not be loaded (${error.message}).`, 'error'));
+      });
+    ['search','radar','status','usage','sort'].forEach(id => els[id].addEventListener(id === 'search' ? 'input' : 'change', render));
+  </script>
+</body>
+</html>
