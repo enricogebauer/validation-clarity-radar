@@ -1,8 +1,217 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T16:39:51.5006610Z",
-  "ledgerUpdatedAt": "09/04/2026 13:32:08",
+  "generatedAt": "2026-09-07T13:02:39.8394406Z",
+  "ledgerUpdatedAt": "09/07/2026 07:00:00",
   "candidates": [
+    {
+      "id": "01a432b67b817afdde02",
+      "title": "How Figma Uses AI Agents for Security",
+      "url": "https://www.infoq.com/news/2026/09/figma-security-agents",
+      "source": "InfoQ",
+      "publishedDate": "2026-09-06",
+      "discoveredDate": "2026-09-06",
+      "summary": "Figma's security agents combine scoped investigation tools with separate memories for past alerts, behavioral guidance, and learned data structures, reportedly reducing complex-alert resolution time by about 70% and on-call pages by 20%. Related vulnerability agents found more than 100 previously unknown issues, while draft-only pull requests, sensitive-data controls, staged precision improvement, and human review constrain automated action.",
+      "sourceType": "aggregator",
+      "evidenceQuality": "high",
+      "novelty": "high",
+      "radars": [
+        {
+          "id": "productMakers",
+          "label": "AI Product-Makers",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for AI Product-Makers based on high relevance to agent-frameworks, autonomous-dev-tools, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "agent-frameworks",
+            "autonomous-dev-tools",
+            "validation-strategy"
+          ]
+        },
+        {
+          "id": "validation",
+          "label": "Validation Clarity",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q1, Q2, Q4, Q5, Q7, Q9, Q10, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "Q1",
+            "Q2",
+            "Q4",
+            "Q5",
+            "Q7",
+            "Q9",
+            "Q10"
+          ]
+        }
+      ],
+      "usages": []
+    },
+    {
+      "id": "eae55e613b725997336a",
+      "title": "The History Is the Detector: Executing CVE Patch History, End-to-End",
+      "url": "https://arxiv.org/abs/2609.05335",
+      "source": "BUGSTONE-E2E researchers",
+      "publishedDate": "2026-09-04",
+      "discoveredDate": "2026-09-07",
+      "summary": "BUGSTONE-E2E mines verified vulnerability-fixing commits into reusable detection rules, filters candidates through a cost-aware funnel, builds runtime verification, and validates scope-checked patches through two-sided differential tests. From 19,325 high-severity CVEs it derived 1,033 rules across 56 CWE families and produced runtime evidence for 644 findings across 14 programs.",
+      "sourceType": "research",
+      "evidenceQuality": "high",
+      "novelty": "high",
+      "radars": [
+        {
+          "id": "validation",
+          "label": "Validation Clarity",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q1, Q2, Q3, Q4, Q5, Q7, Q9, Q10, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q7",
+            "Q9",
+            "Q10"
+          ]
+        }
+      ],
+      "usages": []
+    },
+    {
+      "id": "0ffabb935c253efebaaa",
+      "title": "ARIA - An Agentic Framework for Autonomous Testing of Infotainment Systems",
+      "url": "https://arxiv.org/abs/2609.04913",
+      "source": "ARIA researchers",
+      "publishedDate": "2026-09-04",
+      "discoveredDate": "2026-09-07",
+      "summary": "ARIA uses four specialized agents per step to execute visual end-to-end tests on a physical Android infotainment system and produce reproducible scripts plus visual evidence. Across 30 scenarios it caught all five known defects, but only 71.4% of completed verdicts matched ground truth because navigation and perception limits generated eight false positives.",
+      "sourceType": "research",
+      "evidenceQuality": "high",
+      "novelty": "high",
+      "radars": [
+        {
+          "id": "validation",
+          "label": "Validation Clarity",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for Validation Clarity based on high relevance to Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q6",
+            "Q7",
+            "Q8",
+            "Q9"
+          ]
+        }
+      ],
+      "usages": []
+    },
+    {
+      "id": "2ff277e441a4b0dab8ec",
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+      "source": "GitHub",
+      "publishedDate": "2026-09-04",
+      "discoveredDate": "2026-09-05",
+      "summary": "GitHub introduced HydraFusion, a Copilot research preview that routes coding tasks through a single model, a quality-gated cascade, or an independent critique-and-revision workflow. The runtime uses complete cost accounting, bounded execution, isolated read-only review, fail-safe patch application, and validated routing; controlled benchmarks report near-frontier quality with materially lower estimated workflow cost.",
+      "sourceType": "official",
+      "evidenceQuality": "high",
+      "novelty": "high",
+      "radars": [
+        {
+          "id": "productMakers",
+          "label": "AI Product-Makers",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for AI Product-Makers based on high relevance to agent-frameworks, ai-coding-agents, competitive-moves, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "agent-frameworks",
+            "ai-coding-agents",
+            "competitive-moves",
+            "validation-strategy"
+          ]
+        },
+        {
+          "id": "validation",
+          "label": "Validation Clarity",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q1, Q2, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "Q1",
+            "Q2",
+            "Q5",
+            "Q7",
+            "Q9"
+          ]
+        }
+      ],
+      "usages": []
+    },
+    {
+      "id": "514ca5b6d5f16d7d930d",
+      "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak Models",
+      "url": "https://blog.cloudflare.com/vulnerability-discovery-remediation",
+      "source": "Cloudflare",
+      "publishedDate": "2026-09-03",
+      "discoveredDate": "2026-09-05",
+      "summary": "Cloudflare combines source-code investigation with production route traffic, security events, existing WAF controls, and Workers observability to prioritize vulnerabilities by actual exposure. Specialized agents generate findings, code patches, and narrowly scoped edge mitigations, but independent checks, synthetic fixtures, human validation, policy-checked tools, and customer approval gate every proposed action.",
+      "sourceType": "official",
+      "evidenceQuality": "high",
+      "novelty": "high",
+      "radars": [
+        {
+          "id": "productMakers",
+          "label": "AI Product-Makers",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for AI Product-Makers based on high relevance to autonomous-dev-tools, competitive-moves, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "autonomous-dev-tools",
+            "competitive-moves",
+            "validation-strategy"
+          ]
+        },
+        {
+          "id": "validation",
+          "label": "Validation Clarity",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for Validation Clarity based on high relevance to Q1, Q2, Q4, Q5, Q7, Q9, Q10, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "Q1",
+            "Q2",
+            "Q4",
+            "Q5",
+            "Q7",
+            "Q9",
+            "Q10"
+          ]
+        }
+      ],
+      "usages": []
+    },
     {
       "id": "cdd1118267ee925c6328",
       "title": "Give Your Coding Agents a Memory You Own",
@@ -66,9 +275,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for AI Product-Makers based on high relevance to ai-coding-agents, test-automation, validation, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "ai-coding-agents",
             "test-automation",
@@ -80,9 +289,9 @@
           "label": "Validation Clarity",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for Validation Clarity based on high relevance to Q1, Q2, Q4, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "Q1",
             "Q2",
@@ -112,9 +321,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for AI Product-Makers based on high relevance to ai-coding-agents, validation, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "ai-coding-agents",
             "validation",
@@ -126,9 +335,9 @@
           "label": "Validation Clarity",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for Validation Clarity based on high relevance to Q1, Q2, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "Q1",
             "Q2",
@@ -157,9 +366,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to ai-coding-agents, validation, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "ai-coding-agents",
             "validation",
@@ -171,9 +380,53 @@
           "label": "Validation Clarity",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q1, Q2, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "Q1",
+            "Q2",
+            "Q5",
+            "Q7",
+            "Q9"
+          ]
+        }
+      ],
+      "usages": []
+    },
+    {
+      "id": "fa2cf7f3abc01193a67a",
+      "title": "Maybe We Shouldn't Be Reviewing All This Code",
+      "url": "https://martinfowler.com/rachels-ramblings/code-review.html",
+      "source": "Rachel Laycock / MartinFowler.com",
+      "publishedDate": "2026-09-02",
+      "discoveredDate": "2026-09-05",
+      "summary": "Rachel Laycock argues that agent-generated code volume makes universal pull-request review an untenable bottleneck and proposes moving human judgment earlier through collaborative design, pairing, executable architecture, static checks, and continuous verification. Human review becomes exception-based for high-blast-radius, security-sensitive, architectural, unfamiliar, or low-confidence changes rather than a mandatory ceremony for every diff.",
+      "sourceType": "leader",
+      "evidenceQuality": "high",
+      "novelty": "high",
+      "radars": [
+        {
+          "id": "productMakers",
+          "label": "AI Product-Makers",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for AI Product-Makers based on high relevance to ai-coding-agents, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
+          "tags": [
+            "ai-coding-agents",
+            "validation-strategy"
+          ]
+        },
+        {
+          "id": "validation",
+          "label": "Validation Clarity",
+          "relevance": "high",
+          "discussionPotential": "high",
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q1, Q2, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "Q1",
             "Q2",
@@ -202,9 +455,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "selected",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Selected for AI Product-Makers based on high relevance to agent-frameworks, ai-coding-agents, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "agent-frameworks",
             "ai-coding-agents",
@@ -216,9 +469,9 @@
           "label": "Validation Clarity",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q1, Q2, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "Q1",
             "Q2",
@@ -261,9 +514,9 @@
           "label": "Validation Clarity",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q2, Q3, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "Q2",
             "Q3",
@@ -292,9 +545,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to agent-frameworks, autonomous-dev-tools, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "agent-frameworks",
             "autonomous-dev-tools",
@@ -337,9 +590,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to validation, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "validation",
             "validation-strategy"
@@ -350,9 +603,9 @@
           "label": "Validation Clarity",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to Q1, Q2, Q5, Q7, Q9, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "Q1",
             "Q2",
@@ -381,9 +634,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to ai-coding-agents, validation, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "ai-coding-agents",
             "validation",
@@ -426,9 +679,9 @@
           "label": "AI Product-Makers",
           "relevance": "high",
           "discussionPotential": "high",
-          "status": "candidate",
-          "decisionDate": null,
-          "publicRationale": null,
+          "status": "held",
+          "decisionDate": "2026-09-07",
+          "publicRationale": "Held for later consideration based on high relevance to autonomous-dev-tools, competitive-moves, validation-strategy, high discussion potential, high evidence quality, and high novelty.",
           "tags": [
             "autonomous-dev-tools",
             "competitive-moves",

@@ -13,7 +13,68 @@
     <itunes:owner><itunes:name>Enrico Gebauer</itunes:name><itunes:email>enricogebauer@outlook.com</itunes:email></itunes:owner>
     <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
     <itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category>
-    <lastBuildDate>Fri, 04 Sep 2026 16:39:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 13:02:38 GMT</lastBuildDate>
+    <item>
+      <title>Passing Is Only the First Gate</title>
+      <itunes:author>Enrico Gebauer</itunes:author>
+      <link>https://enricogebauer.github.io/validation-clarity-radar/notes/2026-09-07.html</link>
+      <description>Four developments show functional success splitting into separate gates for complete specifications, semantic repair, production exposure, and perception-aware physical testing.
+
+Weekly episode - 18:27
+
+Episode webpage: https://enricogebauer.github.io/validation-clarity-radar/notes/2026-09-07.html
+
+Key takeaways:
+- Functional tests do not capture the complete repair specification; durable review constraints should become separately attributable acceptance gates.
+- Vulnerability repair must remove root causes and preserve semantics rather than suppress one proof-of-concept crash or reproduce memorized historical fixes.
+- Production exposure can prioritize investigation and mitigation, but source evidence, independent checks, scoped tools, and human approval must still govern action.
+- Autonomous physical-system testers need explicit infrastructure-failure and uncertainty outcomes so perception and navigation errors do not masquerade as product defects.
+
+Chapters:
+- 00:00 Why passing is only the first gate
+- 01:05 SWE-Gate tests the complete repair specification
+- 05:15 PatchBench rejects superficial vulnerability fixes
+- 09:25 Production exposure enters remediation decisions
+- 13:40 ARIA tests physical systems through vision
+- 17:05 Country sign-off: More Than Green
+
+Stories and sources:
+
+Functional success is not full-spec compliance
+SWE-Gate converts review-derived acceptance constraints into separate repository-level tests and finds that 221 of 644 functionally successful agent repairs still violate those constraints.
+Validation impact: Ship signals should distinguish behavior, regression safety, compatibility, scope, architecture, and other durable repository expectations rather than compressing them into one green result.
+Sources:
+- [headline] SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents (2026-09-03): https://arxiv.org/abs/2609.04167
+
+Security patches must remove causes and preserve behavior
+PatchBench transplants vulnerabilities into new contexts and validates security plus semantic correctness, exposing historical-patch similarity and crash-suppressing fixes.
+Validation impact: Autonomous remediation needs exploit-family coverage, semantic regressions, patch provenance, proportional scope, and evidence that the underlying vulnerability is removed.
+Sources:
+- [headline] PatchBench: Evaluating AI Agents for Vulnerability Patching (2026-09-03): https://arxiv.org/abs/2609.04075
+
+Production context prioritizes but does not prove
+Cloudflare joins source analysis with active routes, traffic, attacks, existing defenses, and observability before proposing independently checked patches and narrowly scoped edge mitigations.
+Validation impact: Treat exposure, vulnerability evidence, mitigation validation, remediation, and approval as separate claims with versioned provenance and explicit uncertainty.
+Sources:
+- [headline] Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak Models (2026-09-03): https://blog.cloudflare.com/vulnerability-discovery-remediation/
+
+Autonomous physical testing needs an uncertainty state
+ARIA uses specialized agents to execute visual end-to-end scenarios on physical Android infotainment hardware, catching all five known defects while generating eight false positives from navigation and perception limits.
+Validation impact: Preserve visual evidence and reproducible scripts, calibrate repeated-run stability, and distinguish product defects from environment failure, unsupported action, and perceptual ambiguity.
+Sources:
+- [headline] ARIA - An Agentic Framework for Autonomous Testing of Infotainment Systems (2026-09-04): https://arxiv.org/abs/2609.04913
+
+Country sign-off: More Than Green - An original country sign-off about requiring complete-spec, semantic, production, and perception evidence beyond a passing result.
+
+AI-generated audio briefing curated by Enrico Gebauer from public sources.</description>
+      <content:encoded><![CDATA[<p class="episode-meta"><span class="badge">Weekly episode</span><span>18:27</span></p><p class="intro">Four developments show functional success splitting into separate gates for complete specifications, semantic repair, production exposure, and perception-aware physical testing.</p><audio id="episode-audio" controls preload="metadata" src="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192">Your browser does not support audio playback. <a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192">Download the episode MP3</a>.</audio><p class="episode-links"><a href="https://enricogebauer.github.io/validation-clarity-radar/notes/2026-09-07.html">Episode webpage</a><span aria-hidden="true"> · </span><a href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192">Download MP3</a></p><section aria-labelledby="takeaways"><h2 id="takeaways">Key takeaways</h2><ul class="takeaways"><li>Functional tests do not capture the complete repair specification; durable review constraints should become separately attributable acceptance gates.</li><li>Vulnerability repair must remove root causes and preserve semantics rather than suppress one proof-of-concept crash or reproduce memorized historical fixes.</li><li>Production exposure can prioritize investigation and mitigation, but source evidence, independent checks, scoped tools, and human approval must still govern action.</li><li>Autonomous physical-system testers need explicit infrastructure-failure and uncertainty outcomes so perception and navigation errors do not masquerade as product defects.</li></ul></section><section aria-labelledby="chapters"><h2 id="chapters">Chapters</h2><ol class="chapters"><li><a class="chapter-link" data-seconds="0" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192#t=0"><time>00:00</time> Why passing is only the first gate</a></li><li><a class="chapter-link" data-seconds="65" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192#t=65"><time>01:05</time> SWE-Gate tests the complete repair specification</a></li><li><a class="chapter-link" data-seconds="315" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192#t=315"><time>05:15</time> PatchBench rejects superficial vulnerability fixes</a></li><li><a class="chapter-link" data-seconds="565" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192#t=565"><time>09:25</time> Production exposure enters remediation decisions</a></li><li><a class="chapter-link" data-seconds="820" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192#t=820"><time>13:40</time> ARIA tests physical systems through vision</a></li><li><a class="chapter-link" data-seconds="1025" href="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192#t=1025"><time>17:05</time> Country sign-off: More Than Green</a></li></ol></section><section aria-labelledby="stories"><h2 id="stories">Stories and sources</h2><article><h3>Functional success is not full-spec compliance</h3><p>SWE-Gate converts review-derived acceptance constraints into separate repository-level tests and finds that 221 of 644 functionally successful agent repairs still violate those constraints.</p><p class="impact"><strong>Validation impact:</strong> Ship signals should distinguish behavior, regression safety, compatibility, scope, architecture, and other durable repository expectations rather than compressing them into one green result.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2609.04167">SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents</a><span class="source-meta">Headline · September 3, 2026</span></li></ul></article><article><h3>Security patches must remove causes and preserve behavior</h3><p>PatchBench transplants vulnerabilities into new contexts and validates security plus semantic correctness, exposing historical-patch similarity and crash-suppressing fixes.</p><p class="impact"><strong>Validation impact:</strong> Autonomous remediation needs exploit-family coverage, semantic regressions, patch provenance, proportional scope, and evidence that the underlying vulnerability is removed.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2609.04075">PatchBench: Evaluating AI Agents for Vulnerability Patching</a><span class="source-meta">Headline · September 3, 2026</span></li></ul></article><article><h3>Production context prioritizes but does not prove</h3><p>Cloudflare joins source analysis with active routes, traffic, attacks, existing defenses, and observability before proposing independently checked patches and narrowly scoped edge mitigations.</p><p class="impact"><strong>Validation impact:</strong> Treat exposure, vulnerability evidence, mitigation validation, remediation, and approval as separate claims with versioned provenance and explicit uncertainty.</p><ul class="sources"><li><a href="https://blog.cloudflare.com/vulnerability-discovery-remediation/">Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak Models</a><span class="source-meta">Headline · September 3, 2026</span></li></ul></article><article><h3>Autonomous physical testing needs an uncertainty state</h3><p>ARIA uses specialized agents to execute visual end-to-end scenarios on physical Android infotainment hardware, catching all five known defects while generating eight false positives from navigation and perception limits.</p><p class="impact"><strong>Validation impact:</strong> Preserve visual evidence and reproducible scripts, calibrate repeated-run stability, and distinguish product defects from environment failure, unsupported action, and perceptual ambiguity.</p><ul class="sources"><li><a href="https://arxiv.org/abs/2609.04913">ARIA - An Agentic Framework for Autonomous Testing of Infotainment Systems</a><span class="source-meta">Headline · September 4, 2026</span></li></ul></article></section><section aria-labelledby="song"><h2 id="song">Country sign-off</h2><p><strong>More Than Green</strong> — An original country sign-off about requiring complete-spec, semantic, production, and perception evidence beyond a passing result.</p></section><aside class="disclosure" aria-label="Production disclosure">AI-generated audio briefing curated by Enrico Gebauer from public sources.</aside>]]></content:encoded>
+      <enclosure url="https://enricogebauer.github.io/validation-clarity-radar/episodes/Validation-Clarity-Radar-2026-09-07.mp3?v=18029192" length="18029192" type="audio/mpeg" />
+      <itunes:image href="https://enricogebauer.github.io/validation-clarity-radar/cover.jpg" />
+      <guid isPermaLink="false">Validation-Clarity-Radar-2026-09-07.mp3-18029192</guid>
+      <pubDate>Mon, 07 Sep 2026 13:02:35 GMT</pubDate>
+      <itunes:duration>00:18:27</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Make the Green Mean Something</title>
       <itunes:author>Enrico Gebauer</itunes:author>
